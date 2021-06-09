@@ -1,12 +1,21 @@
+/**
+* Global
+*/
+
 * {
   padding: 0;
   margin: 0;   
 }
 
+/**
+* Header
+*/
+
 .header .home-top {
   padding: 20px;
   display: flex;
-  box-shadow: 0 0 7px #ad57e690;
+  /* box-shadow: 0 0 7px #ad57e690; */
+  box-shadow:  0 0 7px #8a2be280;
 }
 
 .home-top .logo,
@@ -26,7 +35,8 @@
 
 .navigation .nav-item .nav-link {
   text-decoration: none;
-  color: #7534b1;
+  /* color: #7534b1; */
+  font-weight: 600;
 }
 
 .navigation .nav-item .nav-link.active {
@@ -46,5 +56,34 @@
   background-color: blueviolet;
   color: #fff;
   border: 1px solid blueviolet;
-  cursor: pointer; 
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/**
+* Breadcrumb
+*/
+
+.breadcrumb {
+  display: flex;
+  width: 55%;
+  margin: 40px auto;
+}
+
+.breadcrumb .breadcrumb-item {
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.breadcrumb .parent-link {
+  font-weight: 700;
+  color:blueviolet;
+}
+
+.breadcrumb .breadcrumb-sign {
+  color: #bdbdbd;
+}
+
+.breadcrumb .child-link {
+  color: #8a8a8a;
 }
